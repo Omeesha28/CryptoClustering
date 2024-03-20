@@ -31,6 +31,7 @@ Create a scatter plot using hvPlot as follows:
 Set the x-axis as "PC1" and the y-axis as "PC2".
 Color the graph points with the labels found using K-means.
 Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
+
 Optimize Clusters with Principal Component Analysis
 Using the original scaled DataFrame, perform a PCA and reduce the features to three principal components.
 
@@ -51,6 +52,7 @@ Create an empty list to store the inertia values.
 Create a for loop to compute the inertia with each possible value of k.
 Create a dictionary with the data to plot the Elbow curve.
 Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
+
 Answer the following question in your notebook:
 What is the best value for k when using the PCA data?
 Does it differ from the best k value found using the original data?
@@ -67,3 +69,29 @@ Color the graph points with the labels found using K-means.
 Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
 Answer the following question:
 What is the impact of using fewer features to cluster the data using K-Means?
+
+## Original Scaled DataFrame
+
+### Elbow Plot
+![output](1.png)
+
+
+### Scatter Plot
+![output](2.png)
+
+## PCA Scaled DataFrame
+
+### Elbow Plot
+![output](3.png)
+
+
+### Scatter Plot
+![output](4.png)
+
+## Composite Plots
+![output](5.png)
+
+
+
+![output](6.png)
+
